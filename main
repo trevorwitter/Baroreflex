@@ -1,0 +1,13 @@
+from pandas import DataFrame 
+import pandas as pd
+import numpy as np
+from numpy import diff
+from scipy.stats import linregress
+from scipy.signal import butter, lfilter, freqz
+import matplotlib.pyplot as plt
+
+df = pd.read_csv('/Users/twitter/Desktop/Python Projects/Sample Data/Sample_ECG5.txt', delimiter = "\t", index_col=0)
+frame = DataFrame(df)
+
+df.columns=['ecg', 'bp', 'time2']
+ECG = frame['ecg']
