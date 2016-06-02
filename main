@@ -25,3 +25,11 @@ def butter_lowpass_filter(data, cutoff, fs, order=5):
     return y
 
 Filtered_ECG = butter_lowpass_filter(ECG, 3.667, 1000.0, order=5)
+
+# Filter requirements.
+order = 6
+fs = 30.0       # sample rate, Hz
+cutoff = 3.667  # desired cutoff frequency of the filter, Hz
+
+# Get the filter coefficients so we can check its frequency response.
+b, a = butter_lowpass(cutoff, fs, order)
