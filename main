@@ -33,3 +33,30 @@ cutoff = 3.667  # desired cutoff frequency of the filter, Hz
 
 # Get the filter coefficients so we can check its frequency response.
 b, a = butter_lowpass(cutoff, fs, order)
+
+frame2 = DataFrame(df, columns=['ecg', 'bp', 'time2', 'filtered_ecg'])
+frame2['filtered_ecg'] = Filtered_ECG
+
+#QRS threshold 
+threshold = (np.max(frame2.filtered_ecg) - (np.max(frame2.filtered_ecg)-np.min(frame2.filtered_ecg))*.2)
+
+#QRS detection
+ind = 0
+ind2 = 0
+hbindex = [frame2.index[0]]
+heartbeat = []
+RRindex = []
+hbs = [0]
+timestamp = []
+for x in Filtered_ECG:
+    ind += 1
+    if x > threshold and Filtered_ECG[ind-1] > Filtered_ECG[(ind-1)-1] and Filtered_ECG[ind-1] > Filtered_ECG[(ind-1)+1]:  
+        ind2 += 1
+        hbs.append(ind2)
+        heartbeat.append(ind2)
+        hbindex.append(frame2.index[ind]) #timestamp for all detectected QRS in ECG
+    else:
+        heartbeat.append(ind2)
+
+frame2['heart_beat'] = heartbeat
+frame2.index.names = ['time']
