@@ -60,3 +60,9 @@ for x in Filtered_ECG:
 
 frame2['heart_beat'] = heartbeat
 frame2.index.names = ['time']
+
+#Heart Rate
+RR = np.diff(hbindex)
+HR = 60/RR
+RR[0] = RR[1]
+HR[0] = HR[1]
