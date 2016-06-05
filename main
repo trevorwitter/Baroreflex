@@ -69,7 +69,9 @@ HR[0] = HR[1]
 
 #beat to beat BP values for each QRS
 sbp = []
+mbp = []
 dbp = []
 for x in hbs:
     sbp.append(np.max(frame2[frame2.heart_beat == x].bp))
+    mbp.append(np.mean(frame2[frame2.heart_beat == x].bp))
     dbp.append(np.min(frame2[frame2.heart_beat == x].bp))
