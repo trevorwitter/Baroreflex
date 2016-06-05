@@ -66,3 +66,8 @@ RR = np.diff(hbindex)
 HR = 60/RR
 RR[0] = RR[1]
 HR[0] = HR[1]
+
+#beat to beat BP values for each QRS
+sbp = []
+for x in hbs:
+    sbp.append(np.max(frame2[frame2.heart_beat == x].bp))
