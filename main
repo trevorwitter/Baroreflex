@@ -75,3 +75,12 @@ for x in hbs:
     sbp.append(np.max(frame2[frame2.heart_beat == x].bp))
     mbp.append(np.mean(frame2[frame2.heart_beat == x].bp))
     dbp.append(np.min(frame2[frame2.heart_beat == x].bp))
+
+#Output dataframe
+frame3 = DataFrame(hbs[1:], columns = ['hb'])
+frame3['time'] = hbindex[1:]
+frame3['RR'] = RR
+frame3['HR'] = HR
+frame3['sbp'] = sbp[1:]
+frame3['mbp'] = mbp[1:]
+frame3['dbp'] = dbp[1:]
