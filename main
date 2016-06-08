@@ -92,4 +92,5 @@ for y in frame3.sbp:
 frame3['bin'] = BPbin
 
 #frame3['time'] = frame3.time - min(frame3.time)
+frame3 = frame3[:123] 
 print frame3
