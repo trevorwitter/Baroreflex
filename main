@@ -90,3 +90,6 @@ BPbin= []
 for y in frame3.sbp:
     BPbin.append(int((y - min(frame3.sbp))/3))
 frame3['bin'] = BPbin
+
+#frame3['time'] = frame3.time - min(frame3.time)
+print frame3
