@@ -94,3 +94,9 @@ frame3['bin'] = BPbin
 #frame3['time'] = frame3.time - min(frame3.time)
 frame3 = frame3[:123] 
 print frame3
+
+groupedRR = frame3['RR'].groupby(frame3['bin'])
+print groupedRR.mean()
+RRarray = [groupedRR.mean()]
+for x in RRarray:
+    print x
