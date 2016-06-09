@@ -98,5 +98,7 @@ print frame3
 groupedRR = frame3['RR'].groupby(frame3['bin'])
 print groupedRR.mean()
 RRarray = [groupedRR.mean()]
-for x in RRarray:
-    print x
+
+groupedHR = frame3['HR'].groupby(frame3['bin'])
+print groupedHR.mean()
+HRarray = [groupedHR.mean()]
