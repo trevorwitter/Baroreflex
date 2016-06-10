@@ -102,3 +102,7 @@ RRarray = [groupedRR.mean()]
 groupedHR = frame3['HR'].groupby(frame3['bin'])
 print groupedHR.mean()
 HRarray = [groupedHR.mean()]
+
+groupedSBP = frame3['sbp'].groupby(frame3['bin'])
+print groupedSBP.mean()
+SBParray = [groupedSBP.mean()]
