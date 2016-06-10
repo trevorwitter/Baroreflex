@@ -106,3 +106,7 @@ HRarray = [groupedHR.mean()]
 groupedSBP = frame3['sbp'].groupby(frame3['bin'])
 print groupedSBP.mean()
 SBParray = [groupedSBP.mean()]
+
+print "bin size", groupedSBP.size()
+bin_weight = groupedSBP.size()/123
+print "bin weight", bin_weight 
