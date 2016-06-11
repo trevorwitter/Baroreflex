@@ -140,9 +140,16 @@ plt.plot(frame3.time, frame3.dbp)
 plt.ylabel('Blood Pressure')
 fig2 = plt.figure()
 
-
+#correlation plots
 #HR vs SBP 
 ax3 = fig2.add_subplot(1, 1, 1)
 plt.plot(SBParray, HRarray, linestyle=' ', marker='.')
 plt.ylabel('Heart Rate')
+plt.xlabel('Systolic Blood Pressure')
+
+#RR vs SBP 
+fig3 = plt.figure()
+ax4 = fig3.add_subplot(1, 1, 1)
+plt.plot(SBParray, RRarray, linestyle=' ', marker='.') 
+plt.ylabel('RR interval')
 plt.xlabel('Systolic Blood Pressure')
