@@ -139,3 +139,10 @@ plt.plot(frame3.time, frame3.mbp)
 plt.plot(frame3.time, frame3.dbp)
 plt.ylabel('Blood Pressure')
 fig2 = plt.figure()
+
+
+#HR vs SBP 
+ax3 = fig2.add_subplot(1, 1, 1)
+plt.plot(SBParray, HRarray, linestyle=' ', marker='.')
+plt.ylabel('Heart Rate')
+plt.xlabel('Systolic Blood Pressure')
