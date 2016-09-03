@@ -10,5 +10,7 @@ Relationship between RR interval and Systolic Blood Pressure. Slope of linear re
 ![alt text] (RR vs SBP.png "Relationship between RR interval and Systolic Blood Pressure")
 
 Will add sympathetic arterial barorelfex quantification as previously developed in labVIEW: https://ourarchive.otago.ac.nz/handle/10523/6197
+
 http://physreports.physiology.org/content/3/11/e12536.long
+
 http://journal.frontiersin.org/article/10.3389/fnins.2015.00312/full
