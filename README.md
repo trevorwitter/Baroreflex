@@ -1,4 +1,4 @@
-#Cardiac Baroreflex 
+# Cardiac Baroreflex 
 Quantifies cardiac baroreflex sensitivity from raw ecg and continuous blood pressure signals
 
 Low pass filter for ECG signal removes high frequency noise resulting in less artifacts during QRS detection
