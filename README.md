@@ -1,5 +1,5 @@
 # Cardiac Baroreflex 
-Quantification of cardiac baroreflex sensitivity from raw ecg and continuous blood pressure signals
+Quantification of cardiac baroreflex sensitivity from raw electrocardiogram and continuous blood pressure signals
 
 Low pass filter for ECG signal removes high frequency noise resulting in less artifacts during QRS detection
 ![Filtered ECG Signal](https://github.com/trevorwitter/Baroreflex/blob/master/filtered_ECG_signal.png)
