@@ -21,5 +21,3 @@ http://physreports.physiology.org/content/3/11/e12536.long
 
 http://journal.frontiersin.org/article/10.3389/fnins.2015.00312/full
 
-
-Baroreflex/RR vs SBP.png
