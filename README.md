@@ -7,7 +7,7 @@ Low pass filter for ECG signal removes high frequency noise resulting in less ar
 
 ECG QRS peaks are detected to calculate RR interval. Beat-to-beat systolic, mean and diastolic blood pressure calculated (Green, red and light blue lines)
 
-![alt text](RR interval, BP figure.png "ECG QRS dectection and beat-to-beat Systolic, Mean and Diastolic Blood pressure")
+![ECG QRS dectection and beat-to-beat Systolic, Mean and Diastolic Blood pressure](https://github.com/trevorwitter/Baroreflex/blob/master/RR_interval_BP_figure.png)
 ![alt text](RRandb2bBP.png "ECG QRS detection and beat-to-beat Systolic, Mean and Diastolic Blood pressure")
 
 
