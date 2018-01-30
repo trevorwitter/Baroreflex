@@ -13,7 +13,7 @@ ECG QRS peaks are detected to calculate RR interval. Beat-to-beat systolic, mean
 
 Relationship between RR interval and Systolic Blood Pressure. Slope of linear regression is representative of baroreflex sensitivity. Each data point is the mean of a 3mmHg pressure bin. 
 
-![alt text](RR vs SBP.png "Relationship between RR interval and Systolic Blood Pressure")
+![RR interval vs Systolic Blood Pressure](https://github.com/trevorwitter/Baroreflex/blob/master/RR_vs_SBP.png)
 
 Will add sympathetic arterial barorelfex quantification as previously developed in labVIEW: https://ourarchive.otago.ac.nz/handle/10523/6197
 
