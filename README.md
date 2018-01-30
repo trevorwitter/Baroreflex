@@ -2,7 +2,7 @@
 Quantifies cardiac baroreflex sensitivity from raw ecg and continuous blood pressure signals
 
 Low pass filter for ECG signal removes high frequency noise resulting in less artifacts during QRS detection
-![alt text](filtered ECG signal.png "High frequency noise removed from ECG")
+![Filtered ECG Signal](https://github.com/trevorwitter/Baroreflex/blob/master/filtered_ECG_signal.png)
 
 
 ECG QRS peaks are detected to calculate RR interval. Beat-to-beat systolic, mean and diastolic blood pressure calculated (Green, red and light blue lines)
